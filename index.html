@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifying Your Eligibility...</title>
+    <meta http-equiv="refresh" content="4;url=https://tr.cpatrackmaster.com/redirect?aff_id=2387&offer_id=159&aff_click_id=e4ert4&aff_sub_1=facebook">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h2 { color: #333; font-size: 1.4rem; margin-bottom: 10px; }
+        p { color: #666; line-height: 1.5; }
+        .status-list {
+            text-align: left;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .status-item { margin-bottom: 8px; }
+        .check-mark { color: #2ecc71; font-weight: bold; margin-right: 10px; }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo">🎁 Gift Rewards</div>
+    <div class="loader"></div>
+    <h2>Verifying Eligibility</h2>
+    <p>Please wait while we secure your offer spot...</p>
+
+    <div class="status-list">
+        <div class="status-item"><span class="check-mark">✓</span> Checking IP address...</div>
+        <div class="status-item"><span class="check-mark">✓</span> Validating email status...</div>
+        <div class="status-item" id="final-step"><span class="check-mark">⏳</span> Securing your gift box...</div>
+    </div>
+
+    <a href="https://tr.cpatrackmaster.com/redirect?aff_id=2387&offer_id=159&aff_click_id=e4ert4&aff_sub_1=facebook" class="btn">Click here if not redirected</a>
+</div>
+
+<script>
+    const trackingLink = "https://tr.cpatrackmaster.com/redirect?aff_id=2387&offer_id=159&aff_click_id=e4ert4&aff_sub_1=facebook";
+
+    // Simple animation for the last step
+    setTimeout(() => {
+        document.getElementById('final-step').innerHTML = '<span class="check-mark">✓</span> Eligibility Confirmed!';
+    }, 2500);
+
+    // Backup JS Redirect
+    setTimeout(() => {
+        window.location.replace(trackingLink);
+    }, 4000);
+</script>
+
+</body>
+</html>
